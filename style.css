@@ -26,25 +26,51 @@ body{
 .logo{
   color: #E50914;
   font-size: 28px;
-  width: 300px;
+  width: 150px;
+  height: 180px;
   font-family: Arial, Helvetica, sans-serif;
 } 
 
 #logo2{
   position: absolute;
-  margin-top: 70px;
+  margin-top: 100px;
+  margin-left: 10px;
   font-size: 14px;
   color: gray;
 
 
 }
+header{
+  display: flex;
+  justify-content: space-between;
+
+}
 header .container{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: start;
     height: 100px;
     
 }
+
+header .container2{
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  flex-direction: row;
+  width: 250px;
+  align-items: center;
+
+}
+
+.perfil{
+  height: 30px;
+  width: 30px;
+}
+
 
 header nav a{
   
@@ -65,7 +91,7 @@ header nav a:hover{
 
   font-size: 20px;
   /* para deixar a imagem um pouco mais escura usamos o linear gradient, precisamos passar duas cores*/
-  background: linear-gradient(rgba(0,0,0, .100), rgba(0,0,0, .100)100%), url(img/ExterminadorCapa.jpg);
+  background: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)100%), url(img/ExterminadorCapa.jpg);
   height: 600px;
   
   background-size: cover;
