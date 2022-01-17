@@ -1,0 +1,172 @@
+/*decleração de variaveis do projeto */
+:root{
+  --vermelho:#E50914;
+  --preta:#141414;
+
+}
+
+*{
+  margin: 0;
+  padding:0px;
+  box-sizing: border-box;
+  
+  /*delimita borda */
+  }
+
+body{
+    
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    
+
+
+}
+  /*Elementos da Base */
+.logo{
+  color: #E50914;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+#logo2{
+  position: absolute;
+  margin-top: 70px;
+  font-size: 14px;
+  color: gray;
+
+
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    
+}
+
+header nav a{
+  
+  
+  text-decoration: none;
+  color: aliceblue;
+  margin-right: 10px;
+  font-family:Arial, Helvetica, sans-serif }
+header nav a:hover{
+  
+ color:  grey;
+}
+
+  /*Filme principal */
+
+.filme-principal{
+
+  font-size: 20px;
+  /* para deixar a imagem um pouco mais escura usamos o linear gradient, precisamos passar duas cores*/
+  background: linear-gradient(rgba(0,0,0, .100), rgba(0,0,0, .100)100%), url(img/ExterminadorCapa.jpg);
+  height: 600px;
+  
+  background-size: cover;
+  
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.filme-principal .descricao{
+  margin-top: 10px;
+  width: 400px;
+  margin-bottom: 90px;
+
+}
+
+.titulo{
+  margin-top: 25%;
+  
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+  /*Filme principal */
+.botao{
+background-color: rgba(0,0,0, .50);
+border:none;
+color: white;
+padding: 15px 30px;
+margin-left: 15px;
+font-size: 14px;
+border-radius: 5px;
+cursor : pointer;
+transition: 2s ease all;
+width:200px;
+height: 50px;
+
+}
+
+.botao:hover{
+  color: black;
+  background-color: whitesmoke;
+}
+
+.botao i{
+  margin-right: 8px;
+}
+
+.box-filme{
+  
+  height: 100%;
+  width: 300%;
+  display: block;
+}
+
+.box-filme img{
+  width: 100px;
+}
+
+.carrosel-fimes{
+
+   margin-top: 5px; 
+   padding: 10px 10px;
+}
+
+  /*Responsividade aplicada */
+@media screen and (max-width: 700px){
+  header .container{
+      display: flex;
+      flex-direction: column;
+      
+  }
+
+
+ .botoes{
+
+  display: flex;
+  flex-direction: column;
+
+
+ }
+
+ .botao{
+
+  margin-top: 10px;
+
+ }
+
+
+}
+
+@media screen and(min-width: 1000px){
+
+  .descricao{
+    width: 50px;
+  }
+
+}
